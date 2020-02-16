@@ -1,0 +1,31 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" media="all" href="/css/quote.css">
+<title>A Random Quote</title>
+</head>
+{% if quote %}
+<div class="quote">
+  <div class="quoteDetails">
+  	{% if quote['_source']['author'] %}
+    	<a class="leftAlignedImage">
+      	<img alt="{{ quote['_source']['author'] }}" src="/images/{{ quote['_source']['author'] }}.jpg">
+    	</a>
+  	{% else %}
+    	<a class="leftAlignedImage">
+      	<img alt="Author" src="/images/blank.jpg">
+    	</a>
+  	{% endif %}
+    <div class="quoteText">
+			{{ quote['_source']['quote'] }}
+      <br/>
+      <br/>
+  		{% if quote['_source']['author'] %}
+      <span class="authorOrTitle">
+        - {{ quote['_source']['author'] }}
+      </span>
+  		{% endif %}
+    </div>
+   </div>
+</div>
+{% endif %}
+

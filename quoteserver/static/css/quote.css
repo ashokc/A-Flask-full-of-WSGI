@@ -1,0 +1,28 @@
+.quote {
+  width: 600px;
+  overflow: hidden;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 10px 0;
+}
+
+.quoteDetails {
+  float: left;
+  width: 83%;
+  margin-right: 2%;
+}
+
+.leftAlignedImage {
+  float: left;
+  margin-right: 10px;
+}
+
+.quoteText .authorOrTitle {
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.authorOrTitle {
+  float: right;
+}
+
