@@ -3,7 +3,7 @@ Serving up python web applications has never been easier with the suite of WSGI 
 
 This is the source code to go along with the blog article
 
-[A Flask Full of Whiskey (WSGI)](http://xplordat.com/2020/02/17/a-flask-full-of-whiskey-wsgi/)
+[A Flask Full of Whiskey (WSGI)](http://xplordat.com/2020/02/16/a-flask-full-of-whiskey-wsgi/)
 
 ![The web server and the python application communicate via an intermediate WSGI server that translates between the http and wsgi protocols. The WSGI server is not just a translator of course. It is threaded to distribute the incoming requests over multiple instances of the Flask app.](./images/communication.jpg "The web server and the python application communicate via an intermediate WSGI server that translates between the http and wsgi protocols. The WSGI server is not just a translator of course. It is threaded to distribute the incoming requests over multiple instances of the Flask app.")
 
